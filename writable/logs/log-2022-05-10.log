@@ -1,0 +1,15 @@
+ERROR - 2022-05-10 11:04:56 --> Table 'cafeteria.clientes' doesn't exist
+CRITICAL - 2022-05-10 11:04:56 --> Table 'cafeteria.clientes' doesn't exist
+#0 C:\laragon\www\store\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\store\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\store\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\store\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\store\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\store\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\laragon\www\store\app\Models\clienteModel.php(23): CodeIgniter\BaseModel->first()
+#7 C:\laragon\www\store\app\Controllers\Auth.php(68): App\Models\ClienteModel->login(NULL, NULL)
+#8 C:\laragon\www\store\system\CodeIgniter.php(825): App\Controllers\Auth->create()
+#9 C:\laragon\www\store\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\laragon\www\store\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\store\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}

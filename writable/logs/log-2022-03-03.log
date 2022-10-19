@@ -1,0 +1,20 @@
+CRITICAL - 2022-03-03 09:03:26 --> Allowed fields must be specified for model: app\Models\EntrenadorModel
+#0 C:\laragon\www\gym\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('app\\Models\\Entr...')
+#1 C:\laragon\www\gym\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\laragon\www\gym\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\laragon\www\gym\app\Controllers\Entrenador.php(47): CodeIgniter\Model->insert(Array)
+#4 C:\laragon\www\gym\system\CodeIgniter.php(825): App\Controllers\Entrenador->create()
+#5 C:\laragon\www\gym\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entrenador))
+#6 C:\laragon\www\gym\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\gym\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-03 09:05:05 --> Allowed fields must be specified for model: app\Models\EntrenadorModel
+#0 C:\laragon\www\gym\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('app\\Models\\Entr...')
+#1 C:\laragon\www\gym\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\laragon\www\gym\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\laragon\www\gym\app\Controllers\Entrenador.php(47): CodeIgniter\Model->insert(Array)
+#4 C:\laragon\www\gym\system\CodeIgniter.php(825): App\Controllers\Entrenador->create()
+#5 C:\laragon\www\gym\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entrenador))
+#6 C:\laragon\www\gym\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\gym\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

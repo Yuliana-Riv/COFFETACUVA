@@ -1,0 +1,51 @@
+CRITICAL - 2022-03-17 10:24:10 --> syntax error, unexpected '=', expecting ']'
+#0 C:\laragon\www\gym\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\...')
+#1 C:\laragon\www\gym\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\laragon\www\gym\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#5 C:\laragon\www\gym\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#6 C:\laragon\www\gym\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\gym\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-17 10:24:43 --> Class 'App\Controllers\Services' not found
+#0 C:\laragon\www\gym\system\CodeIgniter.php(825): App\Controllers\Auth->create()
+#1 C:\laragon\www\gym\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 C:\laragon\www\gym\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\gym\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-17 10:27:28 --> Class 'App\Controllers\JWT' not found
+#0 C:\laragon\www\gym\system\CodeIgniter.php(825): App\Controllers\Auth->create()
+#1 C:\laragon\www\gym\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 C:\laragon\www\gym\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\gym\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-17 10:29:20 --> Call to undefined method Firebase\JWT\JWT::econde()
+#0 C:\laragon\www\gym\system\CodeIgniter.php(825): App\Controllers\Auth->create()
+#1 C:\laragon\www\gym\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 C:\laragon\www\gym\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\gym\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-17 10:30:04 --> Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in C:\laragon\www\gym\app\Controllers\Auth.php on line 53 and at least 3 expected
+#0 C:\laragon\www\gym\app\Controllers\Auth.php(53): Firebase\JWT\JWT::encode(Array, 'conejoSecret')
+#1 C:\laragon\www\gym\system\CodeIgniter.php(825): App\Controllers\Auth->create()
+#2 C:\laragon\www\gym\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\laragon\www\gym\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\gym\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-17 10:31:00 --> Illegal offset type in isset or empty
+#0 C:\laragon\www\gym\vendor\firebase\php-jwt\src\JWT.php(206): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal offset ...', 'C:\\laragon\\www\\...', 206, Array)
+#1 C:\laragon\www\gym\vendor\firebase\php-jwt\src\JWT.php(185): Firebase\JWT\JWT::sign('eyJ0eXAiOiJKV1Q...', 'conejoSecret', Array)
+#2 C:\laragon\www\gym\app\Controllers\Auth.php(53): Firebase\JWT\JWT::encode(Array, 'conejoSecret', Array)
+#3 C:\laragon\www\gym\system\CodeIgniter.php(825): App\Controllers\Auth->create()
+#4 C:\laragon\www\gym\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 C:\laragon\www\gym\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\gym\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-17 10:32:13 --> Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in C:\laragon\www\gym\app\Controllers\Auth.php on line 53 and at least 3 expected
+#0 C:\laragon\www\gym\app\Controllers\Auth.php(53): Firebase\JWT\JWT::encode(Array, 'conejoSecret')
+#1 C:\laragon\www\gym\system\CodeIgniter.php(825): App\Controllers\Auth->create()
+#2 C:\laragon\www\gym\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 C:\laragon\www\gym\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\gym\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

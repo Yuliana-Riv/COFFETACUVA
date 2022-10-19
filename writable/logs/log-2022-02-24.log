@@ -1,0 +1,53 @@
+CRITICAL - 2022-02-24 08:39:17 --> Class 'App\Controller\BaseController' not found
+#0 C:\laragon\www\gym\system\Router\Router.php(518): include_once()
+#1 C:\laragon\www\gym\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('cliente/index')
+#2 C:\laragon\www\gym\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('cliente/index')
+#3 C:\laragon\www\gym\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 C:\laragon\www\gym\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\gym\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-24 08:39:48 --> Class 'App\Controller\BaseController' not found
+#0 C:\laragon\www\gym\system\Router\Router.php(518): include_once()
+#1 C:\laragon\www\gym\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('cliente/index')
+#2 C:\laragon\www\gym\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('cliente/index')
+#3 C:\laragon\www\gym\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 C:\laragon\www\gym\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\gym\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-24 09:00:39 --> syntax error, unexpected ';', expecting ']'
+#0 C:\laragon\www\gym\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\...')
+#1 C:\laragon\www\gym\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\laragon\www\gym\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#5 C:\laragon\www\gym\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#6 C:\laragon\www\gym\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\gym\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-24 09:00:50 --> Declaration of App\Controllers\Cliente::show($id) should be compatible with CodeIgniter\RESTful\ResourceController::show($id = NULL)
+#0 C:\laragon\www\gym\app\Controllers\Cliente.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Declaration of ...', 'C:\\laragon\\www\\...', 20, Array)
+#1 C:\laragon\www\gym\system\Autoloader\Autoloader.php(264): include_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\gym\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\...')
+#3 C:\laragon\www\gym\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#5 [internal function]: spl_autoload_call('App\\Controllers...')
+#6 C:\laragon\www\gym\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#7 C:\laragon\www\gym\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#8 C:\laragon\www\gym\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\gym\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-02-24 09:34:16 --> Duplicate entry '777777777777' for key 'telefono'
+CRITICAL - 2022-02-24 09:34:16 --> Duplicate entry '777777777777' for key 'telefono'
+#0 C:\laragon\www\gym\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `cl...', 0)
+#1 C:\laragon\www\gym\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 C:\laragon\www\gym\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 C:\laragon\www\gym\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 C:\laragon\www\gym\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\gym\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\gym\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\gym\app\Controllers\Cliente.php(45): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\gym\system\CodeIgniter.php(825): App\Controllers\Cliente->create()
+#9 C:\laragon\www\gym\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+#10 C:\laragon\www\gym\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\gym\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}

@@ -1,0 +1,33 @@
+CRITICAL - 2022-03-15 09:47:47 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+#0 C:\laragon\www\gym\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\...')
+#1 C:\laragon\www\gym\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\laragon\www\gym\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#5 C:\laragon\www\gym\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#6 C:\laragon\www\gym\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\gym\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-15 09:48:11 --> Undefined property: App\Controllers\Cliente::$EntrenadorModel
+#0 C:\laragon\www\gym\app\Controllers\Cliente.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 15, Array)
+#1 C:\laragon\www\gym\system\CodeIgniter.php(825): App\Controllers\Cliente->index()
+#2 C:\laragon\www\gym\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+#3 C:\laragon\www\gym\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\gym\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-15 09:59:57 --> Call to undefined function App\Controllers\validarEntrenador()
+#0 C:\laragon\www\gym\system\CodeIgniter.php(825): App\Controllers\Cliente->index()
+#1 C:\laragon\www\gym\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+#2 C:\laragon\www\gym\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\gym\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-15 10:02:56 --> syntax error, unexpected 'if' (T_IF)
+#0 C:\laragon\www\gym\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\...')
+#1 C:\laragon\www\gym\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\laragon\www\gym\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#5 C:\laragon\www\gym\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#6 C:\laragon\www\gym\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\gym\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
