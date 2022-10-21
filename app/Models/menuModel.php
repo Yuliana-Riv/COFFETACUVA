@@ -2,8 +2,8 @@
 namespace App\Models;
 use CodeIgniter\Model;
 
-class MenuModel extends Model{
-    protected $table = "menus";
+class FormularioModel extends Model{
+    protected $table = "formularios";
     protected $primaryKey = "id";
 
     protected $allowedFields = [
